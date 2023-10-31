@@ -1,5 +1,8 @@
 Feature: Test banking Application
 
-Scenario: Login to the Application
-Given: launch the url
-When: click the home button
+
+  Scenario: Successful login
+    Given I am on the login page
+    When I enter my username and password
+    And I click the login button
+    Then I should be logged in
